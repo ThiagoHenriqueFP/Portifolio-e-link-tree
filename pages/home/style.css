@@ -20,7 +20,12 @@ header {
 
 .contacts {
   display: flex;
-  gap: 20px;
+  gap: 15px;
+}
+
+.contacts svg {
+  width: 28px;
+  height: 28px;
 }
 
 #linkedin {
@@ -38,6 +43,7 @@ header {
   padding-right: 15px;
   font-family: "poppins", sans-serif;
   font-weight: 500;
+  text-align: justify;
 }
 
 aside {
