@@ -28,14 +28,9 @@ header {
   height: 28px;
 }
 
-#linkedin {
-  width: 40px;
-  height: auto;
-  stroke: #ffff;
-}
-
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .paragraph {
@@ -46,14 +41,6 @@ header {
   text-align: justify;
 }
 
-aside {
-  flex: 4.5;
-  border: 1px solid rgb(130, 23, 253);
-  border-radius: 30px;
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
 .h2 {
   margin-top: 0;
   padding: 10px;
@@ -61,9 +48,8 @@ aside {
   font-family: "roboto", sans-serif;
 }
 
-.main {
-  flex: 5.5;
-  margin: 10px 10px 0 10px;
+.comun-content {
+  margin: 10px 5px 10px 5px;
   border: 1px solid rgb(130, 23, 253);
   border-radius: 30px;
 }
