@@ -14,8 +14,22 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: "roboto", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
+}
+
+aside {
+  max-height: 85vh;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .contacts {
@@ -26,11 +40,6 @@ header {
 .contacts svg {
   width: 28px;
   height: 28px;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .paragraph {
@@ -49,7 +58,7 @@ header {
 }
 
 .comun-content {
-  margin: 10px 5px 10px 5px;
+  margin: 10px 5px;
   border: 1px solid rgb(130, 23, 253);
   border-radius: 30px;
 }
@@ -57,12 +66,43 @@ header {
 .list {
   font-family: "poppins", sans-serif;
   font-weight: 500;
+  list-style-type: none;
 }
 
-ul {
-  list-style-type: none;
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapse {
+  background: rgb(130, 23, 253);
+  color: white;
+  padding: 10px;
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-align: left;
+  margin: 0 0 5px;
+  width: 100%;
+}
+
+.active,
+.collapse:hover {
+  background: rgb(76, 14, 148);
 }
 
 a {
   text-decoration: none;
 }
+
+
+/* aside {
+  background: rgb(130, 23, 253);
+  color: #fff;
+  font-style: oblique;
+  margin: 2px !important;
+  border: 2px blueviolet solid !important;
+} */
