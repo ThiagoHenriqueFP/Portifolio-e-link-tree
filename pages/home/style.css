@@ -19,12 +19,13 @@ header {
 }
 
 aside {
-  max-height: 85vh;
-  overflow: auto;
+  max-height: 86vh;
+  overflow: scroll;
 }
 
 aside::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 
 .container {
@@ -75,9 +76,12 @@ aside::-webkit-scrollbar {
   transition: max-height 0.2s ease-out;
 }
 
-#rad {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+.after-content::after {
+  content: '';
+  height: 10px;
+  width: 99%;
+  background: rgb(76, 14, 148);
+  display: block;
 }
 
 .collapse {
@@ -90,7 +94,7 @@ aside::-webkit-scrollbar {
   border: none;
   outline: none;
   text-align: left;
-  width: 100%;
+  width: 99%;
 }
 
 .active,
@@ -100,16 +104,16 @@ aside::-webkit-scrollbar {
 
 .btt-start {
   border-top-left-radius: 20px;
-  /* border-top-right-radius: 20px; */
+  border-top-right-radius: 20px;
 }
 
 .btt-end {
   border-bottom-left-radius: 20px;
-  /* border-bottom-right-radius: 20px; */
+  border-bottom-right-radius: 20px;
 }
 
 
-/* Expad to up */
+/* Expand to up */
 
 a {
   text-decoration: none;
