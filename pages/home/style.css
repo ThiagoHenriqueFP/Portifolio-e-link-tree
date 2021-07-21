@@ -3,12 +3,13 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
+  transition: 0.4s
 }
 
 header {
   display: flex;
   margin: 0;
-  padding: 2.5vh;
+  padding: 2.3vh;
   color: #ffff;
   background: rgb(130, 23, 253);
   justify-content: space-between;
@@ -28,24 +29,29 @@ aside::-webkit-scrollbar {
   height: 5px;
 }
 
+a {
+  text-decoration: none;
+  max-height: 20px;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.contacts {
-  display: flex;
-  gap: 15px;
+.contacts svg {
+  width: 1.2em;
+  height: 1.2em;
 }
 
-.contacts svg {
-  width: 28px;
-  height: 28px;
+.contacts {
+  display: flex;
+  gap: 12px;
+  height: 1.2em;
 }
 
 .paragraph {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   font-family: "poppins", sans-serif;
   font-weight: 500;
   text-align: justify;
@@ -112,9 +118,25 @@ aside::-webkit-scrollbar {
   border-bottom-right-radius: 20px;
 }
 
+.div-arround {
+  display: flex;
+  gap: 2vw;
+  align-items: baseline;
+}
 
-/* Expand to up */
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
 
-a {
-  text-decoration: none;
+input[type="checkbox"]+label svg {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.dark-mode label {
+  cursor: pointer;
+  max-height: 1em;
 }

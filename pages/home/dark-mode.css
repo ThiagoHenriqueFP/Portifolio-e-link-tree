@@ -1,0 +1,25 @@
+body {
+  background: #212121;
+  color: #e7e7e7;
+  transition: 0.4s;
+}
+
+header {
+  background: #4f1e88;
+}
+
+a {
+  color: #8d60c0;
+}
+
+.bordered-block {
+  border-color: #4f1e88;
+}
+
+.collapse {
+  background: #4f1e88;
+}
+
+.after-content::after {
+  background: #4f1e88;
+}
