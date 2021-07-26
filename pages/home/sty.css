@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  height: 100%;
+  transition: 0.4s
+}
+
+header {
+  display: grid;
+  grid-template-columns: 60vw calc(100% - 60vw - 40px) 32px;
+  grid-template-areas: "nome contact chk";
+  background: rgb(129, 22, 172);
+  color: #ffff;
+  background: #7817FD;
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px;
+  align-items: baseline;
+}
+
+span {
+  position: relative;
+  top: -3px;
+}
+
+a {
+  text-decoration: none;
+  max-height: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 10vw 1fr 10vw;
+  grid-template-areas: ". aside ." " . main ." "footer footer footer";
+}
+
+aside {
+  grid-area: aside;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+  width: 100vw;
+  background: #7817FD;
+}
+
+.contacts {
+  grid-area: contact;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  gap: 10px
+}
+
+.contacts svg {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.dark-mode svg {
+  width: 1em;
+  height: 1em;
+}
+
+.dark-mode {
+  grid-area: chk;
+}
+
+.paragraph {
+  padding: 0 15px;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.h2 {
+  margin-top: 0;
+  padding: 10px;
+  padding-top: 15px;
+  font-family: "roboto", sans-serif;
+}
+
+.bordered-block {
+  margin: 10px 5px;
+  border: 1px solid rgb(130, 23, 253);
+  border-radius: 30px;
+}
+
+.list {
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.after-content::after {
+  content: '';
+  height: 10px;
+  width: 99%;
+  background: rgb(76, 14, 148);
+  display: block;
+}
+
+.collapse {
+  background: rgb(130, 23, 253);
+  color: white;
+  padding: 10px;
+  font-family: "roboto", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-align: left;
+  width: 99%;
+}
+
+.active,
+.collapse:hover {
+  background: rgb(76, 14, 148);
+}
+
+.btt-start {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.btt-end {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+input[type="checkbox"]+label svg {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.dark-mode label {
+  cursor: pointer;
+  max-height: 1em;
+}
