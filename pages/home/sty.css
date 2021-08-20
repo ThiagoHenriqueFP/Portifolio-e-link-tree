@@ -31,21 +31,24 @@ a {
 .container {
   display: grid;
   grid-template-columns: 10vw 1fr 10vw;
-  grid-template-areas: ". aside ." " . main ." "footer footer footer";
+  grid-template-areas: ". aside ." ". main ." "footer footer footer";
 }
 
 aside {
+  grid-row-start: 2;
   grid-area: aside;
 }
 
 .main {
+  grid-row-start: 2;
   grid-area: main;
 }
 
 .footer {
+  grid-row-start:1;
   grid-area: footer;
   width: 100vw;
-  background: #7817FD;
+  padding: 10px;
 }
 
 .contacts {
@@ -112,7 +115,7 @@ aside {
 }
 
 .collapse {
-  background: rgb(130, 23, 253);
+  background: #7817FD;
   color: white;
   padding: 10px;
   font-family: "roboto", sans-serif;
@@ -154,4 +157,11 @@ input[type="checkbox"]+label svg {
 .dark-mode label {
   cursor: pointer;
   max-height: 1em;
+}
+
+@media (max-width: 400px) {
+  .container {
+    display: grid;
+    grid-template-columns: 3vw 94vw 3vw;
+  }
 }
