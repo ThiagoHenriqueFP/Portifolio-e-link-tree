@@ -1,0 +1,61 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    background: #851FE5;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-header {
+    display: flex;
+    gap: 15px;
+}
+
+.grid {
+    display: grid;
+}
+
+.contacts {
+    width: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.hs h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.hs .skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.started {
+    border: 2px dashed #FFB14C
+}
+
+.h1 h1 {
+    justify-content: center;
+}
+
+img {
+    width: 80px;
+}
+
+@media (min-width: 480px) {
+    .side-margins {
+        margin-left: 10vw;
+        margin-right: 10vw
+    }
+}
