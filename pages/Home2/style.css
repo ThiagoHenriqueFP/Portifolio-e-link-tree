@@ -1,30 +1,30 @@
 html,
 body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  background: #f6f6f6;
-  font-size: 28px;
-  font-family: roboto, serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: #f6f6f6;
+    font-size: 28px;
+    font-family: roboto, serif;
 }
 
 header {
-  display: flex;
-  background: #851FE5;
-  padding: 15px;
-  justify-content: space-between;
-  align-items: baseline;
-  font-size: 0.7em;
-  color: white;
+    display: flex;
+    background: #851FE5;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.7em;
+    color: white;
 }
 
 .info-header {
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 .grid {
-  display: grid;
+    display: grid;
 }
 
 
@@ -36,108 +36,122 @@ header {
 } */
 
 .hs {
-  padding: 100px;
+    padding: 100px;
 }
 
 .hs h1 {
-  font-size: 1rem;
-  display: flex;
-  justify-content: center;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 .hs .skills {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
 }
 
 .started {
-  padding: 3px;
-  border: 2px dashed #FF5B32;
+    padding: 3px;
+    border: 2px dashed #FF5B32;
 }
 
 .list {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .repos {
-  grid-template-columns: 1fr 1fr;
-  background-image: linear-gradient(180deg, #851FE5, #360984);
-  min-height: 70vh;
-  font-size: 0.6em;
-  color: white;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(180deg, #851FE5, #360984);
+    min-height: 85vh;
+    font-size: 0.6em;
+    color: white;
 }
 
 #github {
-  transition: 0.25s;
-  width: 200px;
-  height: 200px;
-  fill: #f6f6f6;
-  margin-bottom: 15px;
+    transition: 0.25s;
+    width: 200px;
+    height: 200px;
+    fill: #f6f6f6;
+    margin-bottom: 15px;
 }
 
 #github:hover {
-  transition: 0.25s;
-  fill: #d1d1d1;
+    transition: 0.25s;
+    fill: #d1d1d1;
 }
 
 .repos-icon-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
 }
 
 .repos-list {
-  background-image: linear-gradient(180deg, #6716C4, #26056D);
-  border-radius: 15px;
-  margin: auto;
-  padding: 50px;
+    background-image: linear-gradient(180deg, #6716C4, #26056D);
+    border-radius: 15px;
+    margin: auto;
+    padding: 50px;
+    width: 40vw;
+}
+
+.repos-list li {
+    display: flex;
+    align-items: center;
+}
+
+.repos-list>ul li::before {
+    display: block;
+    content: url('/src/assets/images/git_icon_125271.svg');
+    min-width: 40px;
+    min-height: 40px;
+    margin: 10px;
 }
 
 .list {
-  padding: 0;
+    padding: 0;
 }
 
 .skills-img {
-  width: 100px;
+    width: 100px;
 }
 
 a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 
 footer {
-  background-color: #26056D;
-  color: white;
+    background-color: #26056D;
+    color: white;
 }
 
 footer h1 {
-  margin: 0;
+    margin: 0;
 }
 
 @media (min-width: 480px) {
-  .side-margins {
-    margin-left: 8vw;
-    margin-right: 8vw
-  }
+    .side-margins {
+        margin-left: 8vw;
+        margin-right: 8vw
+    }
 }
 
 @media (max-width: 480px) {
-  .hs {
-    padding: 50px;
-  }
-  .repos {
-    grid-template-columns: 1fr;
-  }
-  .repos-list {
-    margin-bottom: 15px;
-  }
-  #github {
-    padding-top: 20px;
-  }
+    .hs {
+        padding: 50px;
+    }
+    .repos {
+        grid-template-columns: 1fr;
+    }
+    .repos-list {
+        margin-bottom: 15px;
+    }
+    #github {
+        padding-top: 20px;
+    }
 }
