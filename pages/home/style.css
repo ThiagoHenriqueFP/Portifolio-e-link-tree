@@ -106,7 +106,7 @@ header {
 
 .repos-list>ul li::before {
   display: block;
-  content: url('./assets/images/git_icon_125271.svg');
+  content: url('assets/images/git_icon_125271.svg');
   min-width: 40px;
   min-height: 40px;
   margin: 10px;
