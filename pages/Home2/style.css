@@ -149,7 +149,11 @@ footer h1 {
     grid-template-columns: 1fr;
   }
   .repos-list {
+    margin: auto;
     margin-bottom: 15px;
+    width: 85vw;
+    padding: 25px;
+    padding-bottom: 30px;
   }
   #github {
     padding-top: 20px;
