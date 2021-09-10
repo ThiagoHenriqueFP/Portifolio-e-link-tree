@@ -112,12 +112,14 @@ header {
   margin: 10px;
 }
 
-.list {
-  padding: 0;
-}
-
 .skills-img {
   width: 100px;
+}
+
+progress {
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 13px;
 }
 
 a {
