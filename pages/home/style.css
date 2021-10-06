@@ -45,7 +45,7 @@
       justify-content: center;
     }
     
-    .hs .skills {
+    .skills {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
@@ -116,20 +116,14 @@
       width: 100px;
     }
     
-    .projects {
+    .projects-area {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
     
-    .projects h1 {
+    .projects-area h1 {
       font-size: 1rem;
-    }
-    
-    .project {
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
     
     .card {
@@ -189,6 +183,14 @@
       }
     }
     
+    @media(min-width: 580px) {
+      .project {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    
     @media (max-width: 480px) {
       .hs {
         padding: 50px;
@@ -205,5 +207,10 @@
       }
       #github {
         padding-top: 20px;
+      }
+      .projects-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
     }
