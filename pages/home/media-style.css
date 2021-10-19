@@ -1,0 +1,49 @@
+@media (min-width: 480px) {
+  .side-margins {
+    margin-left: 8vw;
+    margin-right: 8vw
+  }
+}
+
+@media(min-width: 580px) {
+  .project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #header-txt {
+    display: none;
+  }
+  .info-header {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .hs {
+    margin: 20px;
+    padding: 0;
+  }
+  .repos {
+    grid-template-columns: 1fr;
+  }
+  .repos-list {
+    margin: auto;
+    margin-bottom: 15px;
+    width: 85vw;
+    padding: 25px;
+    padding-bottom: 30px;
+  }
+  #github {
+    padding-top: 20px;
+  }
+  .list {
+    padding-left: 0;
+  }
+  .projects-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

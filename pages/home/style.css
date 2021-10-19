@@ -36,7 +36,7 @@
     }
     
     .hs {
-      padding: 100px;
+      padding: 70px;
     }
     
     .hs h1 {
@@ -66,6 +66,7 @@
       grid-template-columns: 1fr 1fr;
       background-image: linear-gradient(180deg, #851FE5, #360984);
       min-height: 85vh;
+      max-width: 100vw;
       font-size: 0.6em;
       color: white;
     }
@@ -96,7 +97,7 @@
       border-radius: 15px;
       margin: auto;
       padding: 50px;
-      width: 40vw;
+      max-width: 80vw;
     }
     
     .repos-list li {
@@ -174,43 +175,4 @@
     .contacts img {
       width: 28px;
       height: 28px;
-    }
-    
-    @media (min-width: 480px) {
-      .side-margins {
-        margin-left: 8vw;
-        margin-right: 8vw
-      }
-    }
-    
-    @media(min-width: 580px) {
-      .project {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .hs {
-        padding: 50px;
-      }
-      .repos {
-        grid-template-columns: 1fr;
-      }
-      .repos-list {
-        margin: auto;
-        margin-bottom: 15px;
-        width: 85vw;
-        padding: 25px;
-        padding-bottom: 30px;
-      }
-      #github {
-        padding-top: 20px;
-      }
-      .projects-area {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
     }
